@@ -1,0 +1,297 @@
+@font-face {
+    font-family: gloss-bloom;
+    src: url("Fonts/gloss_and_bloom.ttf");
+}
+@font-face{
+	font-family: gothic;
+	src: url("Fonts/century gothic/gothic.ttf");
+}
+@font-face{
+	font-family: gothicb;
+	src: url("Fonts/century gothic/gothicb.ttf");
+}
+
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+	/*background-color: blue;*/
+	font-family: gloss-bloom;
+
+	height: 100%;
+	
+}
+
+section {
+	height: 100%;
+	position: relative;
+	background-color: rgb(235,219,1);
+	overflow: hidden;
+}
+
+/*283 x 283 pixels*/
+#logo {
+	/*display: block;*/
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+/*negative margin to center it*/
+	margin: -142px 0 0 -142px;
+}
+
+#fakelogo {
+	/*display: block;*/
+
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin: -142px 0 0 -142px;
+
+	border-radius: 9999px;
+	height: 283px;
+	width: 283px;
+
+/*	background-color: blue;
+
+	transition: width 2s;*/
+}
+
+#fakelogo:hover {
+	cursor: pointer;
+}
+.pointer-please:hover {
+	cursor:pointer;
+}
+
+.nav-select {
+	color: white;
+}
+
+nav {
+	/*always be visible as scroll no matter wat*/
+	position: fixed;
+	top:5%;
+
+	left:0;right:0;
+	font-family: 'gothicb';
+	/*font-family: default;*/
+
+	/*remove bullet points*/
+	list-style-type: none;
+
+	/*removing padding & margin*/
+	padding: 0;
+	margin: 0;
+
+	line-height: normal;
+
+	height: 10%;
+
+	/*margin-top: 5%;*/
+	/*margin-right: 5%;*/
+
+	z-index: 99;
+
+	opacity: 0;
+}
+
+nav > ul {
+	/*display: inline;*/
+	/*right: 0;*/
+}
+
+nav > ul > li {
+	float: right;
+	/*for horizontal?*/
+	display: inline-block;
+	/*ie compatibility fix*/
+	*display: inline;
+	zoom: 1;
+
+	width: 10vw;
+
+	/*overflow: hidden;*/
+
+	margin: 0 5%;
+}
+
+nav > ul > li:first-child {
+	margin-left: 0;
+}
+nav > ul > li:last-child {
+	margin-right: 0;
+}
+
+nav > ul > li:hover {
+	/*color: white;*/
+	cursor: pointer;
+}
+
+#oval {
+	border-radius: 9999px;
+	position: absolute;
+	/*initial position center of screen*/
+	top: 50%;
+	left:50%;
+	/*margin: -142px 0 0 -142px;*/
+	transform: translate(0, -50%);
+}
+
+.circle {
+	border-radius: 9999px;
+	position: absolute;
+	/*initial position center of screen*/
+	top: 50%;
+	left:50%;
+	/*margin: -142px 0 0 -142px;*/
+	transform: translate(0, -50%);
+
+/*283*/
+/*285*/
+	/*height: 285px;*/
+	/*width: 285px;*/
+
+	/*height: 100%;*/
+
+	overflow: visible;
+}
+
+
+.oval {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	height: 45%;
+	background-color: white;
+	border-radius: 9999px;
+}
+
+
+.white-paint {
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+	height: 40%;
+	width: 80%;
+	opacity : 1;
+	overflow: visible;
+
+
+	/*padding-top: 10%;
+	padding-bottom: 10%;*/
+
+	font-family: gloss-bloom;
+}
+
+.contact-touch {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+	height: 20%;
+	width: 80%;
+	opacity: 1;
+	overflow: visible;
+
+	text-align: center;
+	font-family: gloss-bloom;
+	color: white;
+	line-height: normal;
+}
+
+.contact-mid {
+	position: absolute;
+
+	top : 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	height: 10%;
+	/*width: 100%;*/
+	/*opacity: 0;*/
+
+	text-align: left;
+	overflow: visible;
+
+	color: black;
+	font-family: gothic;
+
+	/*background-color: blue;*/
+}
+
+.text-container {
+	position: absolute;
+
+	/*background-color: blue;*/
+
+	top: 50%;
+	transform: translate(0,-50%);
+
+	/*width: 100%;*/
+	height: 80%;
+	opacity : 0;
+
+	text-align: justify;
+
+	overflow: hidden;
+}
+
+.about-title {
+	position: absolute;
+	top: 0;
+	bottom: 90%;
+	font-family: gothicb;
+
+	width: 100%;
+
+	/*opacity: 0;*/
+}
+/*leave 5% gap*/
+.about-para {
+	position: absolute;
+	top: 20%;
+	bottom: 20%;
+	font-family: gothic;
+
+	width: 100%;
+	/*height: 80%;*/
+
+	/*opacity: 0;*/
+}
+
+
+
+
+/*
+feed back to client
+
+Which cursor do you want it to look like when hover over links?
+pointer? or normal arrow?
+
+make the circles exactly the same size please. and don't have any border on them
+
+dumb user, auto start timer to begin slideshow ?
+
+*/

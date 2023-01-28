@@ -1,0 +1,6 @@
+Calculate the width height ratio.
+
+Use this to decide how large the circle should be.
+
+Design a vertical alernate of the horizontal version.
+
